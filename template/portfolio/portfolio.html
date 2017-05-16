@@ -1,0 +1,25 @@
+<section class="portfolio" id="portfolio" ng-controller="pf-portfolio-ctrl">
+  <div class="container">
+    <div class="inner-wrapper">
+      <!-- <div class="title-holder text-center">
+        <h2>PORTFOLIO</h2>
+      </div> -->
+      <div class="content-holder">
+        <div class="project-holder">
+          <div class="project col-xs-12 col-sm-6 col-md-3" ng-repeat="projects in portfolio">
+            <div class="proj-holder">
+              <img class="project-img" src="{{projects.img[0]}}">
+              <div class="title-holder">
+                {{projects.title}}
+                <span class="btn-holder">
+                  <button class="btn btn-view" type="button" data-toggle="modal" data-target="#project-modal" ng-click="view(projects.title)">VIEW PROJECT</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <portfolio-Modal></portfolio-Modal>
+</section>

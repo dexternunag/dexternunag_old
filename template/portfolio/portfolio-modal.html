@@ -1,0 +1,48 @@
+<div class="modal fade" tabindex="-1" id="project-modal">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div ng-repeat="project in portfolio | filter:{title:projTitle}">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="title-holder">
+            <h4 class="modal-title">{{project.title}}</h4>
+          </div>
+          <hr />
+          <div class="description-holder">
+            <h5>
+              <i class="fa fa-comment"></i>
+              Description:
+            </h5>
+            <p class="text-flow">{{project.description}}</p>
+          </div>
+
+          <div class="img-holder">
+            <h5>
+              <i class="fa fa-camera"></i>
+              Screenshots:
+            </h5>
+            <ul class="list-inline">
+              <li ng-repeat="img in project.img">
+                <img class="imgs img-slide"
+                     ng-src="{{img}}"
+                     ng-model="imgSlide"
+                     ng-click="zoomImg()">
+              </li>
+            </ul>
+          </div>
+          <div class="tag-holder">
+            <h5>
+              <i class="fa fa-tags"></i>
+              Tags
+            </h5>
+            <ul class="list-inline">
+              <li class="tag" ng-repeat="tag in project.tags">{{tag}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

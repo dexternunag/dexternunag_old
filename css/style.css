@@ -1,0 +1,469 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.navbar-custom {
+  padding: 5px 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 15px;
+  border: none; }
+  .navbar-custom .navbar-header .hamburger {
+    color: #fff; }
+  .navbar-custom li {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .navbar-custom li.active {
+      background-color: #FFEA00; }
+      .navbar-custom li.active .navlink {
+        color: #141414; }
+      .navbar-custom li.active:hover .navlink {
+        color: #141414; }
+    .navbar-custom li:hover .navlink {
+      color: #FFEA00;
+      background-color: transparent; }
+  .navbar-custom .navlink {
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .navbar-custom .navlink:focus {
+      background-color: transparent; }
+
+.home {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh; }
+  .home .inner-wrapper {
+    margin-top: 60px; }
+    .home .inner-wrapper .title-holder {
+      position: relative;
+      top: 150px;
+      color: #fff; }
+      .home .inner-wrapper .title-holder .name-holder .name-text {
+        font-size: 80px;
+        font-weight: 100; }
+      .home .inner-wrapper .title-holder .position-holder {
+        font-size: 25px;
+        font-weight: 100; }
+        .home .inner-wrapper .title-holder .position-holder .position-text::before {
+          content: '< ';
+          color: #FFEA00; }
+        .home .inner-wrapper .title-holder .position-holder .position-text::after {
+          content: ' />';
+          color: #FFEA00; }
+    @media screen and (max-width: 767px) {
+      .home .inner-wrapper .title-holder .name-holder .name-text {
+        font-size: 55px; } }
+
+.about {
+  padding-top: 70px;
+  height: auto; }
+  .about .title-holder h2 {
+    font-weight: 500; }
+  .about .content-holder hr {
+    border-color: transparent; }
+  .about .content-holder .avatar-holder .my-avatar {
+    width: 100%;
+    height: 100%; }
+  .about .content-holder .info-holder .title-holder {
+    font-size: 20px; }
+    .about .content-holder .info-holder .title-holder::before {
+      content: '//'; }
+  .about .content-holder .info-holder .text-holder {
+    font-weight: 300;
+    font-size: 16px; }
+    .about .content-holder .info-holder .text-holder .text-gold {
+      padding: 1px 5px;
+      color: #FFEA00;
+      background-color: #212121; }
+    .about .content-holder .info-holder .text-holder .text-design {
+      padding: 1px 5px;
+      color: #FF9100;
+      background-color: #212121; }
+    .about .content-holder .info-holder .text-holder .text-function {
+      padding: 1px 5px;
+      color: #E040FB;
+      background-color: #212121; }
+  .about .content-holder .info-holder .skills-wrapper .skill {
+    margin: 10px 15px 10px 0;
+    float: left; }
+    .about .content-holder .info-holder .skills-wrapper .skill .skill-label {
+      font-weight: 500; }
+    .about .content-holder .info-holder .skills-wrapper .skill .progress-bar-container {
+      width: 350px;
+      height: 5px;
+      background-color: #bdc3c7;
+      overflow: hidden; }
+      .about .content-holder .info-holder .skills-wrapper .skill .progress-bar-container .progress-bar-value {
+        height: 5px;
+        float: left; }
+        .about .content-holder .info-holder .skills-wrapper .skill .progress-bar-container .progress-bar-value.HTML {
+          background-color: #FF6D00; }
+        .about .content-holder .info-holder .skills-wrapper .skill .progress-bar-container .progress-bar-value.CSS {
+          background-color: #42A5F5; }
+        .about .content-holder .info-holder .skills-wrapper .skill .progress-bar-container .progress-bar-value.JAVASCRIPT {
+          background-color: #FDD835; }
+        .about .content-holder .info-holder .skills-wrapper .skill .progress-bar-container .progress-bar-value.PHP {
+          background-color: #0D47A1; }
+        .about .content-holder .info-holder .skills-wrapper .skill .progress-bar-container .progress-bar-value.BOOTSTRAP {
+          background-color: #7E57C2; }
+        .about .content-holder .info-holder .skills-wrapper .skill .progress-bar-container .progress-bar-value.SASS {
+          background-color: #F06292; }
+        .about .content-holder .info-holder .skills-wrapper .skill .progress-bar-container .progress-bar-value.ANGULARJS {
+          background-color: #E53935; }
+
+@media screen and (max-width: 767px) {
+  .about {
+    padding: 50px 0; }
+    .about .content-holder .avatar-holder {
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 100%; }
+      .about .content-holder .avatar-holder .my-avatar {
+        position: relative;
+        right: 100px;
+        width: 300px;
+        height: 300px; }
+    .about .content-holder .info-holder .text-holder {
+      text-align: justify; }
+    .about .content-holder .info-holder .skills-wrapper .skill {
+      margin: 15px auto;
+      float: none; }
+      .about .content-holder .info-holder .skills-wrapper .skill .progress-bar-container {
+        width: 100%;
+        height: 5px;
+        background-color: #bdc3c7;
+        overflow: hidden; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about {
+    padding: 50px 0; }
+    .about .content-holder .avatar-holder {
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 100%; }
+      .about .content-holder .avatar-holder .my-avatar {
+        position: relative;
+        right: 100px;
+        width: 300px;
+        height: 300px; }
+    .about .content-holder .info-holder .text-holder {
+      text-align: justify; }
+    .about .content-holder .info-holder .skills-wrapper .skill {
+      margin: 10px 10px 10px 0;
+      float: left; }
+      .about .content-holder .info-holder .skills-wrapper .skill .progress-bar-container {
+        width: 350px;
+        height: 5px;
+        background-color: #bdc3c7;
+        overflow: hidden; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about {
+    padding: 50px 0; }
+    .about .content-holder .avatar-holder {
+      position: relative;
+      bottom: -118px;
+      right: 0; }
+    .about .content-holder .info-holder .skills-wrapper .skill {
+      margin: 10px 10px 10px 0;
+      float: left; }
+      .about .content-holder .info-holder .skills-wrapper .skill .progress-bar-container {
+        width: 298px;
+        height: 5px;
+        background-color: #bdc3c7;
+        overflow: hidden; } }
+
+.portfolio {
+  padding: 80px 0;
+  height: 100%;
+  background-color: #eee; }
+  .portfolio .content-holder .project-holder .project {
+    position: relative;
+    margin: auto 5px;
+    padding: 0;
+    width: 275px;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .portfolio .content-holder .project-holder .project .proj-holder {
+      overflow: hidden;
+      height: 250px;
+      -webkit-box-shadow: 1px 1px 3px 0 #555;
+              box-shadow: 1px 1px 3px 0 #555; }
+      .portfolio .content-holder .project-holder .project .proj-holder .project-img {
+        position: relative;
+        right: 98px;
+        height: 100%; }
+      .portfolio .content-holder .project-holder .project .proj-holder .title-holder {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        text-align: center;
+        padding: 15px 10px;
+        width: 100%;
+        height: 50px;
+        font-weight: 300;
+        font-size: 16px;
+        color: #ffea00;
+        background-color: #141414;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        .portfolio .content-holder .project-holder .project .proj-holder .title-holder .btn-holder {
+          margin: 10px auto;
+          display: none;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+          .portfolio .content-holder .project-holder .project .proj-holder .title-holder .btn-holder .btn-view {
+            position: relative;
+            z-index: 1;
+            background-color: transparent;
+            border: 1px solid #ffea00;
+            border-radius: 0;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
+            .portfolio .content-holder .project-holder .project .proj-holder .title-holder .btn-holder .btn-view::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -1;
+              width: 0;
+              height: 100%;
+              background: #ffea00;
+              -webkit-transition: all 0.4s ease-in-out;
+              transition: all 0.4s ease-in-out; }
+            .portfolio .content-holder .project-holder .project .proj-holder .title-holder .btn-holder .btn-view:hover::before {
+              width: 100%; }
+    .portfolio .content-holder .project-holder .project:hover .title-holder {
+      padding: 85px 0;
+      height: 100%;
+      font-size: 22px;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      overflow: hidden; }
+      .portfolio .content-holder .project-holder .project:hover .title-holder .btn-holder {
+        display: block; }
+    .portfolio .content-holder .project-holder .project:hover .project-img {
+      -webkit-filter: blur(2px);
+              filter: blur(2px); }
+    .portfolio .content-holder .project-holder .project:first-child .project-img, .portfolio .content-holder .project-holder .project:nth-child(2) .project-img {
+      right: 0; }
+  .portfolio .modal .modal-content {
+    border-radius: 0; }
+    .portfolio .modal .modal-content .modal-title {
+      font-weight: 500; }
+    .portfolio .modal .modal-content .modal-body {
+      margin: auto 5px; }
+      .portfolio .modal .modal-content .modal-body .img-holder .imgs {
+        margin: 5px auto;
+        width: 150px; }
+      .portfolio .modal .modal-content .modal-body .tag-holder .tag {
+        padding: 3px 10px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        color: #fff;
+        background-color: #141414; }
+
+@media screen and (max-width: 767px) {
+  .portfolio {
+    padding: 50px 0; }
+    .portfolio .content-holder .project-holder .project {
+      margin-bottom: 15px;
+      width: 100%;
+      height: 300px; }
+      .portfolio .content-holder .project-holder .project .proj-holder {
+        height: 100%; }
+        .portfolio .content-holder .project-holder .project .proj-holder .project-img {
+          position: relative;
+          left: 0; }
+        .portfolio .content-holder .project-holder .project .proj-holder .title-holder {
+          height: 60px;
+          font-size: 22px; }
+      .portfolio .content-holder .project-holder .project:hover .title-holder {
+        padding: 85px 0;
+        height: 100%;
+        font-size: 35px;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        overflow: hidden; }
+        .portfolio .content-holder .project-holder .project:hover .title-holder .btn-holder {
+          display: block; }
+          .portfolio .content-holder .project-holder .project:hover .title-holder .btn-holder .btn-view {
+            font-weight: 300;
+            font-size: 18px; }
+      .portfolio .content-holder .project-holder .project:hover .project-img {
+        -webkit-filter: blur(2px);
+                filter: blur(2px); }
+      .portfolio .content-holder .project-holder .project:first-child .project-img, .portfolio .content-holder .project-holder .project:nth-child(2) .project-img {
+        right: 0; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .portfolio {
+    padding: 70px 0; }
+    .portfolio .content-holder .project-holder .project {
+      margin-bottom: 15px;
+      width: 350px;
+      height: 300px; }
+      .portfolio .content-holder .project-holder .project .proj-holder {
+        height: 100%; }
+        .portfolio .content-holder .project-holder .project .proj-holder .project-img {
+          position: relative;
+          right: 45%; }
+        .portfolio .content-holder .project-holder .project .proj-holder .title-holder {
+          height: 60px;
+          font-size: 22px; }
+      .portfolio .content-holder .project-holder .project:hover .title-holder {
+        padding: 85px 0;
+        height: 100%;
+        font-size: 30px;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        overflow: hidden; }
+        .portfolio .content-holder .project-holder .project:hover .title-holder .btn-holder {
+          display: block; }
+          .portfolio .content-holder .project-holder .project:hover .title-holder .btn-holder .btn-view {
+            font-weight: 300;
+            font-size: 16px; }
+      .portfolio .content-holder .project-holder .project:hover .project-img {
+        -webkit-filter: blur(2px);
+                filter: blur(2px); }
+      .portfolio .content-holder .project-holder .project:first-child .project-img, .portfolio .content-holder .project-holder .project:nth-child(2) .project-img {
+        right: 0; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .portfolio {
+    padding: 80px 0; }
+    .portfolio .content-holder .project-holder .project {
+      margin-bottom: 15px;
+      width: 225px;
+      height: 210px; }
+      .portfolio .content-holder .project-holder .project .proj-holder {
+        height: 100%; }
+        .portfolio .content-holder .project-holder .project .proj-holder .project-img {
+          position: relative;
+          right: 45%; }
+        .portfolio .content-holder .project-holder .project .proj-holder .title-holder {
+          height: 50px;
+          font-size: 16px; }
+      .portfolio .content-holder .project-holder .project:hover .title-holder {
+        padding: 65px 0;
+        height: 100%;
+        font-size: 18px;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        overflow: hidden; }
+        .portfolio .content-holder .project-holder .project:hover .title-holder .btn-holder {
+          display: block; }
+          .portfolio .content-holder .project-holder .project:hover .title-holder .btn-holder .btn-view {
+            font-weight: 300; }
+      .portfolio .content-holder .project-holder .project:hover .project-img {
+        -webkit-filter: blur(2px);
+                filter: blur(2px); }
+      .portfolio .content-holder .project-holder .project:first-child .project-img, .portfolio .content-holder .project-holder .project:nth-child(2) .project-img {
+        right: 0; } }
+
+.contact {
+  padding: 50px 0;
+  height: 100%;
+  background-color: #141414; }
+  .contact .title-holder {
+    color: #fff; }
+  .contact .content-holder .basic-contact {
+    margin-bottom: 30px; }
+    .contact .content-holder .basic-contact .contact {
+      margin-bottom: 10px;
+      padding: 0;
+      font-weight: 100;
+      font-size: 15px;
+      color: #fff; }
+      .contact .content-holder .basic-contact .contact .fa {
+        margin-right: 10px; }
+  .contact .content-holder .social-contact .social {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 15px;
+    color: #fff; }
+    .contact .content-holder .social-contact .social a {
+      text-decoration: none;
+      color: #fff; }
+      .contact .content-holder .social-contact .social a:hover {
+        color: #ffea00; }
+        .contact .content-holder .social-contact .social a:hover .fa {
+          color: #ffea00; }
+    .contact .content-holder .social-contact .social .fa {
+      margin-right: 10px; }
+  .contact .content-holder .message-holder .form-control {
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    background-color: #303030;
+    border: 1px solid #333;
+    border-radius: 0; }
+  .contact .content-holder .message-holder textarea {
+    resize: none; }
+  .contact .content-holder .message-holder .btn-send {
+    position: relative;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    background-color: #303030;
+    border-radius: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .contact .content-holder .message-holder .btn-send::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 0;
+      height: 100%;
+      background: #ffea00;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+    .contact .content-holder .message-holder .btn-send:hover {
+      color: #000; }
+      .contact .content-holder .message-holder .btn-send:hover::before {
+        width: 100%; }
+
+@media screen and (max-width: 767px) {
+  .contact {
+    padding: 30px 0; }
+    .contact .title-holder {
+      margin-bottom: 15px; }
+    .contact .content-holder .basic-contact {
+      margin-bottom: 20px; }
+    .contact .content-holder .social-contact .social {
+      margin-bottom: 20px; }
+    .contact .content-holder .message-holder .btn-send {
+      width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact {
+    padding: 30px 0; }
+    .contact .title-holder {
+      margin-bottom: 15px; }
+    .contact .content-holder .basic-contact {
+      margin-bottom: 20px; }
+    .contact .content-holder .social-contact .social {
+      margin-bottom: 20px; }
+    .contact .content-holder .message-holder .btn-send {
+      width: 100%; } }
+
+.footer {
+  padding: 8px 0;
+  font-weight: 300;
+  font-size: 12px;
+  color: #999;
+  background-color: #000; }

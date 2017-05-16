@@ -1,0 +1,76 @@
+<section class="contact" id="contact" ng-controller="pf-contact-ctrl">
+  <div class="container">
+    <div class="inner-wrapper">
+      <div class="content-holder">
+        <div class="row">
+          <div class="contact-holder col-xs-12 col-sm-4">
+            <div class="basic-contact">
+              <div class="title-holder">
+                <h4>CONTACT</h4>
+              </div>
+              <ul class="list-unstyled">
+                <li class="contact">
+                  <i class="fa fa-home"></i>
+                  3138 Batangas Street Hensonville Subdivision, Angeles City, Pampanga
+                </li>
+                <li class="contact">
+                  <i class="fa fa-phone"></i>
+                  +639267727460
+                </li>
+                <li class="contact">
+                  <i class="fa fa-envelope"></i>
+                  nunagdexter@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="social-holder col-xs-12 col-sm-4">
+            <div class="social-contact">
+              <div class="title-holder">
+                <h4>CONNECT WITH ME</h4>
+              </div>
+              <ul class="list-unstyled">
+                <li class="social" ng-repeat="media in social">
+                  <a href="{{media.link}}">
+                    <i class="{{media.icon}}"></i>
+                    {{media.site}}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="message-holder col-xs-12 col-sm-4">
+            <div class="title-holder">
+              <h4>MESSAGE ME</h4>
+            </div>
+            <form class="form" ng-submit="send()">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Name" ng-model="message.name"/>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="Email" ng-model="message.email"/>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="4" cols="4" placeholder="Message.." ng-model="message.msg"></textarea>
+              </div>
+              <div class="form-group clearfix">
+                <button class="btn btn-send pull-right" type="submit">
+                  <i class="fa fa-send"></i>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="copyright-holder text-center">
+    Copyrights
+    <i class="fa fa-copyright"></i>
+    2017 DNUNAG
+  </div>
+</footer>
